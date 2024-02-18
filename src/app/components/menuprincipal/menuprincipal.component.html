@@ -1,0 +1,37 @@
+<ion-menu side="start" menuId="menu" contentId="main">
+  <ion-header>
+    <ion-toolbar color="light">
+      <div class="loguito">
+        <img src="assets/images/logo.png"/>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="true">
+        <ion-item routerLink="/home">
+          <ion-icon slot ="start" name="grid-outline" color="primary"></ion-icon>
+          Home
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle auto-hide="true">
+        <ion-item routerLink="/profile">
+          <ion-icon slot ="start" name="person-outline" color="primary"></ion-icon>
+          Perfil
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle auto-hide="true">
+        <ion-item routerLink="/chats">
+          <ion-icon slot ="start" name="people-outline" color="primary"></ion-icon>
+          Chats
+        </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle auto-hide="true">
+        <ion-item routerLink="/login">
+          <ion-icon slot ="start" name="exit-outline" color="primary"></ion-icon>
+          Cerrar sesión
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

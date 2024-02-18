@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="logos">
+      <div class="title ion-text-center">
+        <img src="assets/images/logo.png"/>
+      </div>
+  </div>
+  <div class="info">
+    <ion-list lines="none" class="form fade-in">
+      <ion-item fill="outline">
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input placeholder="ejemplo123" class="ion-text-right"></ion-input>
+      </ion-item>
+      <ion-item fill="outline">
+        <ion-label position="floating" type="password">Contraseña</ion-label>
+        <ion-input placeholder="Ej.12345"></ion-input>
+      </ion-item>
+    </ion-list>
+  </div>
+  
+    <div class="botones">
+      <ion-button (click)="presentToast('top')" color="success">Registrarse</ion-button>
+      <br>
+      <ion-button routerLink="/login">Volver</ion-button>
+    </div>
+
+</ion-content>
